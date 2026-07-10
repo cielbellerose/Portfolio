@@ -1,5 +1,5 @@
 function Contact() {
-  return <section></section>;
+  return <section className="page-section"></section>;
 }
 
 export default Contact;

@@ -1,5 +1,5 @@
 function More() {
-  return <section></section>;
+  return <section className="page-section"></section>;
 }
 
 export default More;

@@ -2,12 +2,17 @@
 .container {
   width: 100%;
   max-width: 1000px;
+  min-width: 540px;
   margin-inline: auto;
   padding-inline: 24px;
   box-sizing: border-box;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+
+  /* temporary borders */
+  outline: 1px dashed var(--debug-border);
+  min-height: 120px;
 }
 
 /* columns full length */
@@ -15,34 +20,6 @@ main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-}
-
-/* Full-width name/title area below nav */
-.title-section {
-  width: 100%;
-  padding: 10px 0;
-
-  /* temporary borders */
-  outline: 1px dashed var(--debug-border);
-  min-height: 120px;
-}
-
-.name-box {
-  border: 4px solid #fff;
-  border-radius: 10px;
-  padding: 24px 24px;
-}
-
-.name-box h1 {
-  font-size: 36px;
-  margin: 0 0 10px;
-  letter-spacing: 1px;
-}
-
-.name-box p {
-  color: var(--text);
-  font-size: 20px;
-  font-weight: 800;
 }
 
 /* Two-columns: 80% / 20% */
@@ -70,4 +47,36 @@ main {
   /* temporary */
   outline: 1px dashed var(--debug-border);
   min-height: 240px;
+}
+
+.page-section {
+  width: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  /* temporary */
+  outline: 1px dashed var(--debug-border);
+  min-height: 240px;
+}
+
+/* Global button design */
+.button {
+  /* TODO: update design */
+  width: calc(25% - 15px);
+  height: 40px;
+  background-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 2px;
+  border: none;
+
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
