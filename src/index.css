@@ -9,6 +9,13 @@
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
+
+  --purple: #7f5a83;
+  --blue: #325273;
+  --green: #007a3f;
+  --orange: #cc7a00;
+
+
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
@@ -35,7 +42,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: #202020;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;

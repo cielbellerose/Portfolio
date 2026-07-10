@@ -1,16 +1,20 @@
 .navbar {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   width: 100%;
   padding: 16px 0;
-  border-bottom: 1px solid var(--border);
 }
 
 .navbar a {
-  color: var(--text);
+  flex: 1;
+  text-align: left;
+  color: #fff;
   text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 2px;
+  transition: opacity 0.2s;
 }
 
 .navbar a:hover {
-  color: var(--text-h);
+  opacity: 0.85;
 }

@@ -1,13 +1,21 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
+const tabs = [
+  { to: "/", label: "Home", color: "var(--purple)" },
+  { to: "/resume", label: "Resume", color: "var(--blue)" },
+  { to: "/more", label: "More", color: "var(--green)" },
+  { to: "/contact", label: "Contact", color: "var(--orange)" },
+];
+
 function NavBar() {
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/resume">Resume</Link>
-      <Link to="/more">More</Link>
-      <Link to="/contact">Contact</Link>
+      {tabs.map((tab) => (
+        <Link key={tab.to} to={tab.to} style={{ backgroundColor: tab.color }}>
+          {tab.label}
+        </Link>
+      ))}
     </nav>
   );
 }
