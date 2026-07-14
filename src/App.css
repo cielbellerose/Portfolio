@@ -1,3 +1,9 @@
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Centered content box */
 .container {
   width: 100%;
@@ -15,40 +21,6 @@
   min-height: 120px;
 }
 
-/* columns full length */
-main {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Two-columns: 80% / 20% */
-.columns {
-  display: flex;
-  gap: 0;
-  width: 100%;
-  align-items: stretch;
-  flex-grow: 1;
-}
-
-/* Left: experiences, projects ... */
-.content {
-  flex: 3;
-
-  /* temporary */
-  outline: 1px dashed var(--debug-border);
-  min-height: 240px;
-}
-
-/* Right: Timezone, LinkedIn/GitHub links, skills .. */
-.sidebar {
-  flex: 1;
-
-  /* temporary */
-  outline: 1px dashed var(--debug-border);
-  min-height: 240px;
-}
-
 .page-section {
   width: 100%;
   flex-grow: 1;
@@ -61,22 +33,4 @@ main {
   /* temporary */
   outline: 1px dashed var(--debug-border);
   min-height: 240px;
-}
-
-/* Global button design */
-.button {
-  /* TODO: update design */
-  width: calc(25% - 15px);
-  height: 40px;
-  background-color: var(--blue);
-  color: #fff;
-  text-decoration: none;
-  text-align: left;
-  font-size: 16px;
-  border-radius: 2px;
-  border: none;
-
-  padding: 6px 14px;
-  cursor: pointer;
-  transition: opacity 0.2s;
 }

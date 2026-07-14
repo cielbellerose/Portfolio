@@ -1,0 +1,33 @@
+/* Two-columns: 80% / 20% */
+.columns {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+/* Left: experiences, projects ... */
+.content {
+  flex: 3;
+
+  /* temporary */
+  outline: 1px dashed var(--debug-border);
+}
+
+/* Right: Timezone, LinkedIn/GitHub links, skills .. */
+.sidebar {
+  flex: 1;
+
+  /* temporary */
+  outline: 1px dashed var(--debug-border);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+
+   /* temporary */
+  outline: 1px dashed var(--debug-border);
+}
