@@ -1,0 +1,10 @@
+.skillset-container {
+  padding: 5px;
+  margin: 20px 0px;
+  /* temporary borders */
+  outline: 1px dashed var(--debug-border);
+}
+
+.skillset-title {
+    font-weight: 600;
+}

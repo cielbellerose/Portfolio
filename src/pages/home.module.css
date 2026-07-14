@@ -18,6 +18,7 @@
 /* Right: Timezone, LinkedIn/GitHub links, skills .. */
 .sidebar {
   flex: 1;
+  overflow: hidden;
 
   /* temporary */
   outline: 1px dashed var(--debug-border);
@@ -30,4 +31,16 @@
 
    /* temporary */
   outline: 1px dashed var(--debug-border);
+}
+
+.github {
+  width: 40px;
+  height: 40px;
+  color: var(--purple); /* how to make this not current-color */
+  transition: all 0.2s ease;
+}
+
+.github:hover {
+  color: var(--purple); /* how to make this not current-color */
+  transform: scale(1.05);
 }

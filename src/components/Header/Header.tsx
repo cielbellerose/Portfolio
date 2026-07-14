@@ -1,5 +1,5 @@
 import "./Header.css";
-import photo from "../assets/photo.png";
+import photo from "../../assets/photo.png";
 
 function Header() {
   return (

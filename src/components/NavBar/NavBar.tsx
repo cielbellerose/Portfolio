@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./NavBar.css";
+import styles from "./NavBar.module.css";
 
 const tabs = [
   { to: "/", label: "Home", color: "var(--purple)" },
@@ -10,7 +10,7 @@ const tabs = [
 
 function NavBar() {
   return (
-    <nav className="navbar">
+    <nav className={styles["navbar"]}>
       {tabs.map((tab) => (
         <Link key={tab.to} to={tab.to} style={{ backgroundColor: tab.color }}>
           {tab.label}
