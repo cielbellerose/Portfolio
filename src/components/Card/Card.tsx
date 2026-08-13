@@ -1,5 +1,13 @@
 import { GitHubIcon } from "../../assets/Icons";
 
+export type CardColor = "purple" | "blue" | "green";
+
+const colorClasses: Record<CardColor, { border: string; icon: string }> = {
+  purple: { border: "border-purple", icon: "text-purple" },
+  blue: { border: "border-blue", icon: "text-blue" },
+  green: { border: "border-green", icon: "text-green" },
+};
+
 export interface CardProps {
   title: string;
   subtitle?: string;
@@ -9,11 +17,8 @@ export interface CardProps {
   githubUrl?: string;
   imageUrl?: string;
   imageAlt?: string;
-  logoUrl?: string;
-  logoAlt?: string;
-  modalContent?: React.ReactNode;
-  isClickable?: boolean;
-  modalImages?: string[];
+  color?: CardColor;
+  short?: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -21,40 +26,48 @@ const Card: React.FC<CardProps> = ({
   subtitle,
   dates,
   desc,
-  //   tags,
   githubUrl,
-  //   imageUrl,
-  //   imageAlt = "",
-  //   logoUrl,
-  //   logoAlt = "",
-  //   modalContent,
-  //   isClickable,
-  //   modalImages,
+  imageUrl,
+  imageAlt = "",
+  color = "purple",
+  short = false,
 }) => {
+  const { border, icon } = colorClasses[color];
+  const height = short ? "h-35 min-h-35" : "h-50 min-h-50";
+
   return (
-    <>
-      <div className="bg-bg border-purple relative flex h-50 min-h-50 w-full min-w-50 flex-col rounded-[10px] border-4 p-2">
-        <div>{title}</div>
-        <div>{subtitle}</div>
-        <div>{dates}</div>
-        <div>{desc}</div>
-        <div className="text-purple absolute right-3 bottom-3 h-10 w-10 transition-all duration-200 hover:scale-105">
-          {githubUrl && (
-            <div>
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <GitHubIcon />
-              </a>
-            </div>
-          )}
-        </div>
+    <div
+      className={`bg-bg relative flex w-full min-w-60 flex-col overflow-hidden rounded-[10px] border-4 p-2 ${border} ${height}`}
+    >
+      {imageUrl && (
+        <img
+          src={imageUrl}
+          alt={imageAlt}
+          className="mb-2 h-20 w-full shrink-0 rounded-[5px] object-cover"
+        />
+      )}
+      <div className="font-bold">{title}</div>
+      <div className="text-sm">{subtitle}</div>
+      <div className="text-sm">{dates}</div>
+      <div className="line-clamp-3 text-sm">{desc}</div>
+      <div
+        className={`absolute right-3 bottom-3 h-10 w-10 transition-all duration-200 hover:scale-105 ${icon}`}
+      >
+        {githubUrl && (
+          <div>
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <GitHubIcon />
+            </a>
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 };
 

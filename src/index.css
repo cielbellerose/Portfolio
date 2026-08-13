@@ -5,7 +5,8 @@
   --color-text-h: #08060d;
   --color-bg: #fff;
   --color-border: #e5e4e7;
-  --color-debug-border: #ff2d9b; /* temporary: bright outline for layout testing */
+  --color-muted: #6b6c6d;
+  --color-debug-border: #4a1643; /* temporary outline for layout testing */
   --color-code-bg: #f4f3ec;
   --color-accent: #aa3bff;
   --color-accent-bg: rgba(170, 59, 255, 0.1);
@@ -31,6 +32,7 @@
     --color-text-h: #f3f4f6;
     --color-bg: #202020;
     --color-border: #2e303a;
+    --color-muted: #6b6c6d;
     --color-code-bg: #1f2028;
     --color-accent: #c084fc;
     --color-accent-bg: rgba(192, 132, 252, 0.15);
