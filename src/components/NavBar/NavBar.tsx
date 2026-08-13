@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
-import styles from "./NavBar.module.css";
 
 const tabs = [
-  { to: "/", label: "Home", color: "var(--purple)" },
-  { to: "/resume", label: "Resume", color: "var(--blue)" },
-  { to: "/more", label: "More", color: "var(--green)" },
-  { to: "/contact", label: "Contact", color: "var(--orange)" },
+  { to: "/", label: "Home", color: "bg-purple" },
+  { to: "/resume", label: "Resume", color: "bg-blue" },
+  { to: "/more", label: "More", color: "bg-green" },
+  { to: "/contact", label: "Contact", color: "bg-orange" },
 ];
 
 function NavBar() {
   return (
-    <nav className={styles["navbar"]}>
+    <nav className="flex w-full gap-5 py-4">
       {tabs.map((tab) => (
-        <Link key={tab.to} to={tab.to} style={{ backgroundColor: tab.color }}>
+        <Link
+          key={tab.to}
+          to={tab.to}
+          className={`${tab.color} min-w-20 flex-1 rounded-[2px] px-3.5 py-1.5 text-left text-white no-underline transition-opacity duration-200 hover:opacity-85`}
+        >
           {tab.label}
         </Link>
       ))}

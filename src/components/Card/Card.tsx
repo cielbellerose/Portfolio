@@ -1,5 +1,4 @@
 import { GitHubIcon } from "../../assets/Icons";
-import styles from "./card.module.css";
 
 export interface CardProps {
   title: string;
@@ -34,14 +33,14 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <>
-      <div className={styles["card"]}>
-        <div className={styles["card-title"]}>{title}</div>
-        <div className={styles["card-subtitle"]}>{subtitle}</div>
-        <div className={styles["card-dates"]}>{dates}</div>
-        <div className={styles["card-desc"]}>{desc}</div>
-        <div className={styles["github-icon"]}>
+      <div className="bg-bg border-purple relative flex h-50 min-h-50 w-full min-w-50 flex-col rounded-[10px] border-4 p-2">
+        <div>{title}</div>
+        <div>{subtitle}</div>
+        <div>{dates}</div>
+        <div>{desc}</div>
+        <div className="text-purple absolute right-3 bottom-3 h-10 w-10 transition-all duration-200 hover:scale-105">
           {githubUrl && (
-            <div className={styles["github"]}>
+            <div>
               <a
                 href={githubUrl}
                 target="_blank"
@@ -49,7 +48,7 @@ const Card: React.FC<CardProps> = ({
                 aria-label="GitHub"
                 onClick={(e) => e.stopPropagation()}
               >
-                <GitHubIcon className={styles.githubIcon} />
+                <GitHubIcon />
               </a>
             </div>
           )}

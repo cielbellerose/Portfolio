@@ -2,15 +2,14 @@ import { GitHubIcon, LinkedInIcon } from "../assets/Icons.tsx";
 import Card from "../components/Card/Card.tsx";
 import Skillset from "../components/Skillset/Skillset.tsx";
 import Timezone from "../components/Timezone/Timezone.tsx";
-import styles from "./home.module.css";
 
 function Home() {
   return (
     <>
-      <div className={styles["columns"]}>
-        <div className={styles["content"]}>
-          <div className="section-title">Experiences</div>
-          <div className={styles["cards-container"]}>
+      <div className="flex w-full flex-1 items-stretch">
+        <div className="outline-debug-border flex-[3] outline-1 outline-dashed">
+          <div>Experiences</div>
+          <div className="outline-debug-border grid grid-cols-1 gap-5 p-2.5 outline-1 outline-dashed sm:grid-cols-2 lg:grid-cols-3">
             <Card
               title="Northeastern Electric Racing"
               subtitle="Tech Lead and Software Developer"
@@ -29,8 +28,8 @@ function Home() {
               tags={["Java", "Kotlin", "Cursor"]}
             />
           </div>
-          <div className="section-title">Projects</div>
-          <div className={styles["cards-container"]}>
+          <div>Projects</div>
+          <div className="outline-debug-border grid grid-cols-1 gap-5 p-2.5 outline-1 outline-dashed sm:grid-cols-2 lg:grid-cols-3">
             <Card
               title="Network Port Scanner"
               dates="June - August 2025"
@@ -38,7 +37,7 @@ function Home() {
               tags={["TypeScript", "Prisma", "React"]}
             />
           </div>
-          <div className={styles["cards-container"]}>
+          <div className="outline-debug-border grid grid-cols-1 gap-5 p-2.5 outline-1 outline-dashed sm:grid-cols-2 lg:grid-cols-3">
             <Card
               title="Sydney Study Abroad"
               dates="May - June 2026"
@@ -53,9 +52,9 @@ function Home() {
             />
           </div>
         </div>
-        <aside className={styles["sidebar"]}>
+        <aside className="outline-debug-border flex-1 overflow-hidden outline-1 outline-dashed">
           <Timezone />
-          <div className={styles["github"]}>
+          <div className="text-purple h-10 w-10 transition-all duration-200 hover:scale-105">
             <a
               href="https://github.com/cielbellerose"
               target="_blank"
@@ -66,7 +65,7 @@ function Home() {
               <GitHubIcon />
             </a>
           </div>
-          <div className={styles["github"]}>
+          <div className="text-purple h-10 w-10 transition-all duration-200 hover:scale-105">
             <a
               href="https://github.com/cielbellerose"
               target="_blank"

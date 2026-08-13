@@ -1,5 +1,3 @@
-import styles from "./Skillset.module.css";
-
 export interface SkillsetProps {
   title: string;
   skills: string[];
@@ -8,8 +6,8 @@ export interface SkillsetProps {
 const Skillset: React.FC<SkillsetProps> = ({ title, skills }) => {
   return (
     <>
-      <div className={styles["skillset-container"]}>
-        <div className={styles["skillset-title"]}>{title}</div>
+      <div className="outline-debug-border my-5 p-[5px] outline-1 outline-dashed">
+        <div className="font-semibold">{title}</div>
         {skills}
       </div>
     </>
