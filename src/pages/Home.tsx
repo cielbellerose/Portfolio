@@ -8,7 +8,7 @@ function Home() {
     <>
       <div className="flex w-full flex-1 items-stretch">
         <div className="outline-debug-border flex-[3] outline-1 outline-dashed">
-          <div>Experiences</div>
+          <div className="py-2 text-lg font-bold">Experiences</div>
           <div className="outline-debug-border grid grid-cols-1 gap-5 p-2.5 outline-1 outline-dashed sm:grid-cols-2 lg:grid-cols-3">
             <Card
               title="Northeastern Electric Racing"
@@ -28,7 +28,7 @@ function Home() {
               tags={["Java", "Kotlin", "Cursor"]}
             />
           </div>
-          <div>Projects</div>
+          <div className="py-2 text-lg font-bold">Projects</div>
           <div className="outline-debug-border grid grid-cols-1 gap-5 p-2.5 outline-1 outline-dashed sm:grid-cols-2 lg:grid-cols-3">
             <Card
               title="Network Port Scanner"
