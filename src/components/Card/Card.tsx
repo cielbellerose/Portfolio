@@ -45,10 +45,10 @@ const Card: React.FC<CardProps> = ({
           className="mb-2 h-50 w-full shrink-0 rounded-[10px] object-cover"
         />
       )}
-      <div className="font-bold">{title}</div>
-      <div className="text-sm">{subtitle}</div>
-      <div className="text-sm">{dates}</div>
-      <div className="line-clamp-3 text-sm mt-1.5">{desc}</div>
+      <div className="text-lg font-bold">{title}</div>
+      <div className="text-md">{subtitle}</div>
+      <div className="text-md">{dates}</div>
+      <div className="mt-1.5 line-clamp-3 text-sm">{desc}</div>
       <div
         className={`absolute right-3 bottom-3 h-10 w-10 transition-all duration-200 hover:scale-105 ${icon}`}
       >

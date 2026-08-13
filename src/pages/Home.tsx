@@ -16,8 +16,8 @@ function Home() {
         </div>
         <aside className="outline-debug-border flex-1 overflow-hidden outline-1 outline-dashed">
           <Timezone />
-          <div className="flex gap-3">
-            <div className="text-muted h-10 w-10 transition-all duration-200 hover:scale-105">
+          <div className="flex justify-center gap-6">
+            <div className="text h-12 w-12 transition-all duration-200 hover:scale-105">
               <a
                 href="https://github.com/cielbellerose"
                 target="_blank"
@@ -28,7 +28,7 @@ function Home() {
                 <GitHubIcon />
               </a>
             </div>
-            <div className="text-muted h-10 w-10 transition-all duration-200 hover:scale-105">
+            <div className="text h-12 w-12 transition-all duration-200 hover:scale-105">
               <a
                 href="https://github.com/cielbellerose"
                 target="_blank"
