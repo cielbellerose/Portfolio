@@ -18,7 +18,7 @@ export interface CardProps {
   imageUrl?: string;
   imageAlt?: string;
   color?: CardColor;
-  short?: boolean;
+  heightClass?: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -30,26 +30,25 @@ const Card: React.FC<CardProps> = ({
   imageUrl,
   imageAlt = "",
   color = "purple",
-  short = false,
+  heightClass = "h-50 min-h-50",
 }) => {
   const { border, icon } = colorClasses[color];
-  const height = short ? "h-35 min-h-35" : "h-50 min-h-50";
 
   return (
     <div
-      className={`bg-bg relative flex w-full min-w-60 flex-col overflow-hidden rounded-[10px] border-4 p-2 ${border} ${height}`}
+      className={`bg-bg relative flex w-full min-w-60 flex-col overflow-hidden rounded-[10px] border-4 p-2 ${border} ${heightClass}`}
     >
       {imageUrl && (
         <img
           src={imageUrl}
           alt={imageAlt}
-          className="mb-2 h-20 w-full shrink-0 rounded-[5px] object-cover"
+          className="mb-2 h-50 w-full shrink-0 rounded-[10px] object-cover"
         />
       )}
       <div className="font-bold">{title}</div>
       <div className="text-sm">{subtitle}</div>
       <div className="text-sm">{dates}</div>
-      <div className="line-clamp-3 text-sm">{desc}</div>
+      <div className="line-clamp-3 text-sm mt-1.5">{desc}</div>
       <div
         className={`absolute right-3 bottom-3 h-10 w-10 transition-all duration-200 hover:scale-105 ${icon}`}
       >

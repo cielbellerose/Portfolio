@@ -1,7 +1,7 @@
 import { GitHubIcon, LinkedInIcon } from "../assets/Icons.tsx";
 import Experiences from "../components/Experiences/Experiences.tsx";
 import Projects from "../components/Projects/Projects.tsx";
-import StudyAbroad from "../components/StudyAbroad/StudyAbroad.tsx";
+import Education from "../components/Education/Education.tsx";
 import Skillset from "../components/Skillset/Skillset.tsx";
 import Timezone from "../components/Timezone/Timezone.tsx";
 
@@ -12,7 +12,7 @@ function Home() {
         <div className="outline-debug-border flex-[3] pr-5 outline-1 outline-dashed">
           <Experiences />
           <Projects />
-          <StudyAbroad />
+          <Education />
         </div>
         <aside className="outline-debug-border flex-1 overflow-hidden outline-1 outline-dashed">
           <Timezone />
@@ -44,10 +44,13 @@ function Home() {
             title="Languages"
             skills={["TypeScript", "Java", "Kotlin", "Python"]}
           />
-          <Skillset title="Frontend" skills={["React", "Next.js"]} />
+          <Skillset
+            title="Frontend"
+            skills={["React", "Next.js", "Tailwind"]}
+          />
           <Skillset
             title="Backend"
-            skills={["Express", "Node.js", "Prisma", "PostGRES"]}
+            skills={["Express", "Node.js", "Prisma", "Postgres"]}
           />
           <Skillset title="Dev Tools" skills={["Postman", "Vercel"]} />
         </aside>
