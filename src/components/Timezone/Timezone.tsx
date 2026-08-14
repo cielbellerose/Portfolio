@@ -21,9 +21,9 @@ function Timezone() {
   }, []);
 
   return (
-    <div className="bg-muted mt-6 mb-4 rounded-[25px] p-4 text-center text-white">
+    <div className="bg-muted mx-1 my-6 rounded-[30px] p-4 text-center text-white">
       <div className="text-lg leading-none">Boston</div>
-      <div className="mt-0.5 text-2xl leading-none font-bold">{time}</div>
+      <div className="mt-1 text-2xl leading-none font-bold">{time}</div>
     </div>
   );
 }

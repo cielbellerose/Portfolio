@@ -19,9 +19,9 @@ function Carousel({ slides }: CarouselProps) {
         type="button"
         aria-label="Previous slide"
         onClick={() => emblaApi?.scrollPrev()}
-        className="text-purple absolute top-1/2 -left-7 z-10 -translate-y-1/2 transition-opacity hover:opacity-80"
+        className="text-purple absolute top-1/2 -left-12 z-10 -translate-y-1/2 p-3 transition-opacity hover:opacity-80"
       >
-        <TriangleLeftIcon className="h-8 w-8" />
+        <TriangleLeftIcon className="h-10 w-10" />
       </button>
 
       <div className="min-w-0 overflow-hidden" ref={emblaRef}>
@@ -46,9 +46,9 @@ function Carousel({ slides }: CarouselProps) {
         type="button"
         aria-label="Next slide"
         onClick={() => emblaApi?.scrollNext()}
-        className="text-purple absolute top-1/2 -right-7 z-10 -translate-y-1/2 transition-opacity hover:opacity-70"
+        className="text-purple absolute top-1/2 -right-12 z-10 -translate-y-1/2 p-3 transition-opacity hover:opacity-70"
       >
-        <TriangleRightIcon className="h-8 w-8" />
+        <TriangleRightIcon className="h-10 w-10" />
       </button>
     </div>
   );

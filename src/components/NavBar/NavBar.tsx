@@ -4,12 +4,12 @@ const tabs = [
   { to: "/", label: "Home", color: "bg-purple" },
   { to: "/resume", label: "Resume", color: "bg-blue" },
   { to: "/more", label: "More", color: "bg-green" },
-  { to: "/contact", label: "Contact", color: "bg-orange" },
+  // { to: "/contact", label: "Contact", color: "bg-orange" },
 ];
 
 function NavBar() {
   return (
-    <nav className="flex w-full gap-5 py-4">
+    <nav className="flex w-full gap-5 py-4 pr-50">
       {tabs.map((tab) => (
         <Link
           key={tab.to}

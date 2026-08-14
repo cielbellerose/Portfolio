@@ -29,8 +29,8 @@ const slides = [
 
 function More() {
   return (
-    <section className="outline-debug-border mt-5 box-border flex min-h-60 w-full flex-1 flex-col py-5 outline-1 outline-dashed">
-      <div className="py-2 text-lg font-bold">Current Adventures</div>
+    <section className="outline-debug-border box-border flex min-h-60 w-full flex-1 flex-col pb-5 outline-1 outline-dashed">
+      <div className="py-2 text-2xl font-bold">Current Adventures</div>
       <Carousel slides={slides} />
     </section>
   );

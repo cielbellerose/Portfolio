@@ -30,7 +30,7 @@ function Home() {
             </div>
             <div className="text h-12 w-12 transition-all duration-200 hover:scale-105">
               <a
-                href="https://github.com/cielbellerose"
+                href="https://www.linkedin.com/in/kinsey-bellerose/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -46,7 +46,7 @@ function Home() {
           />
           <Skillset
             title="Frontend"
-            skills={["React", "Next.js", "Tailwind"]}
+            skills={["React", "Next.js", "Tailwind", "Bootstrap"]}
           />
           <Skillset
             title="Backend"

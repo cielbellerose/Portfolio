@@ -19,7 +19,7 @@ function Projects() {
           dates="Sept 2025 - Present"
           githubUrl="https://github.com/Northeastern-Electric-Racing/FinishLine"
           color="blue"
-          desc="Feature of a full-stack web application for Northeastern Electric Racing to manage and track rules compliance."
+          desc="Feature of a full-stack web application for Northeastern Electric Racing to parse, manage, and track rules compliance."
           heightClass="h-45 min-h-45"
         />
         <Card
@@ -29,16 +29,16 @@ function Projects() {
           color="blue"
           imageUrl={portScanner}
           imageAlt="Network Port Scanner"
-          heightClass="h-75 min-h-75"
+          heightClass="h-72 min-h-72"
         />
         <Card
-          title="Survival of Petalorn"
+          title="3D FPS Unity Game"
           dates="June 2024 - August 2024"
           githubUrl="https://github.com/cielbellerose/Petalorn"
           color="blue"
           imageUrl={petalorn}
           imageAlt="Survival of Petalorn"
-          heightClass="h-75 min-h-75"
+          heightClass="h-72 min-h-72"
         />
       </div>
     </>
