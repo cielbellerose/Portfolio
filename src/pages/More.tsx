@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel/Carousel";
+import Carousel from "../components/Carousel";
 import bodegaBay from "../assets/adventures/BodegaBay.jpg";
 import katoomba from "../assets/adventures/Katoomba.jpg";
 import kearsarge from "../assets/adventures/Kearsarge.jpg";
@@ -29,7 +29,7 @@ const slides = [
 
 function More() {
   return (
-    <section className="outline-debug-border box-border flex min-h-60 w-full flex-1 flex-col pb-5 outline-1 outline-dashed">
+    <section className="box-border flex min-h-60 w-full flex-1 flex-col pb-5">
       <div className="py-2 text-2xl font-bold">Current Adventures</div>
       <Carousel slides={slides} />
     </section>

@@ -2,7 +2,7 @@ import resumePdf from "../assets/Kinsey_Bellerose_Resume.pdf";
 
 function Resume() {
   return (
-    <section className="outline-debug-border mt-5 box-border flex min-h-60 w-full flex-1 flex-col p-5 outline-1 outline-dashed">
+    <section className="mt-5 box-border flex min-h-60 w-full flex-1 flex-col p-5">
       <a
         href={resumePdf}
         download="Kinsey_Bellerose_Resume.pdf"

@@ -1,20 +1,20 @@
 import { GitHubIcon, LinkedInIcon } from "../assets/Icons.tsx";
-import Experiences from "../components/Experiences/Experiences.tsx";
-import Projects from "../components/Projects/Projects.tsx";
-import Education from "../components/Education/Education.tsx";
-import Skillset from "../components/Skillset/Skillset.tsx";
-import Timezone from "../components/Timezone/Timezone.tsx";
+import Experiences from "../components/Experiences.tsx";
+import Projects from "../components/Projects.tsx";
+// import Education from "../components/Education/Education.tsx";
+import Skillset from "../components/Skillset.tsx";
+import Timezone from "../components/Timezone.tsx";
 
 function Home() {
   return (
     <>
       <div className="flex w-full flex-1 items-stretch">
-        <div className="outline-debug-border flex-[3] pr-5 outline-1 outline-dashed">
+        <div className="flex-[3] pr-5">
           <Experiences />
           <Projects />
-          <Education />
+          {/* <Education /> */}
         </div>
-        <aside className="outline-debug-border flex-1 overflow-hidden outline-1 outline-dashed">
+        <aside className="flex-1 overflow-hidden">
           <Timezone />
           <div className="flex justify-center gap-6">
             <div className="text h-12 w-12 transition-all duration-200 hover:scale-105">

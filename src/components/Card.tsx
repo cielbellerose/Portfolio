@@ -1,4 +1,4 @@
-import { GitHubIcon } from "../../assets/Icons";
+import { GitHubIcon } from "../assets/Icons";
 
 export type CardColor = "purple" | "blue" | "green";
 

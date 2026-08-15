@@ -1,11 +1,11 @@
-import Card from "../Card/Card";
-import petalorn from "../../assets/projects/petalorn.png";
-import portScanner from "../../assets/projects/portScanner.gif";
+import Card from "./Card";
+import petalorn from "../assets/projects/petalorn.png";
+import portScanner from "../assets/projects/portScanner.gif";
 function Projects() {
   return (
     <>
       <div className="py-2 text-2xl font-bold">Projects</div>
-      <div className="outline-debug-border grid grid-cols-2 gap-5 py-2.5 outline-1 outline-dashed">
+      <div className="grid grid-cols-2 gap-5 py-2.5">
         <Card
           title="VSCode Extension TC Detection"
           dates="May 2026 - Present"
@@ -25,7 +25,7 @@ function Projects() {
         <Card
           title="Network Port Scanner"
           dates="June 2025 - August 2025"
-          githubUrl="https://github.com/Northeastern-Electric-Racing/FinishLine"
+          githubUrl="https://github.com/cielbellerose/qt-port-scanner"
           color="blue"
           imageUrl={portScanner}
           imageAlt="Network Port Scanner"

@@ -1,10 +1,10 @@
-import Card from "../Card/Card";
+import Card from "./Card";
 
 function Experiences() {
   return (
     <>
       <div className="py-2 text-2xl font-bold">Experiences</div>
-      <div className="outline-debug-border grid grid-cols-2 gap-5 py-2.5 outline-1 outline-dashed">
+      <div className="grid grid-cols-2 gap-5 py-2.5">
         <Card
           title="Northeastern Electric Racing"
           subtitle="Tech Lead and Software Developer"

@@ -1,5 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
-import { TriangleLeftIcon, TriangleRightIcon } from "../../assets/Icons";
+import { TriangleLeftIcon, TriangleRightIcon } from "../assets/Icons";
 
 export interface CarouselSlide {
   imageUrl: string;

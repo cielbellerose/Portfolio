@@ -1,9 +1,9 @@
-import Card from "../Card/Card";
+import Card from "./Card";
 
 function Education() {
   return (
     <>
-      <div className="outline-debug-border mt-1 grid grid-cols-2 gap-5 py-2.5 outline-1 outline-dashed">
+      <div className="mt-1 grid grid-cols-2 gap-5 py-2.5">
         <Card
           title="Sydney Dialogue"
           dates="May 2026 - June 2026"
