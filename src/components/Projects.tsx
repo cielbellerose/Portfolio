@@ -4,7 +4,9 @@ import portScanner from "../assets/projects/portScanner.gif";
 function Projects() {
   return (
     <>
-      <div className="py-2 text-2xl font-bold">Projects</div>
+      <div className="font-rubik py-2 text-2xl font-bold tracking-tight">
+        Projects
+      </div>
       <div className="grid grid-cols-2 gap-5 py-2.5">
         <Card
           title="VSCode Extension TC Detection"

@@ -14,7 +14,7 @@ function NavBar() {
         <Link
           key={tab.to}
           to={tab.to}
-          className={`${tab.color} min-w-20 flex-1 rounded-[2px] px-3.5 py-1.5 text-left text-white no-underline transition-opacity duration-200 hover:opacity-85`}
+          className={`${tab.color} font-rubik rounded-chip min-w-20 flex-1 px-3.5 py-1.5 text-left text-base font-semibold text-white no-underline transition-opacity duration-200 hover:opacity-85`}
         >
           {tab.label}
         </Link>

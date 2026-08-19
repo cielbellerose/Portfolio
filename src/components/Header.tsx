@@ -3,12 +3,12 @@ import photo from "../assets/photo.png";
 function Header() {
   return (
     <section className="flex min-h-25 w-full flex-col justify-center py-5">
-      <div className="relative rounded-[10px] border-4 border-neutral-600 p-[15px] pr-35 dark:border-neutral-400">
+      <div className="rounded-card relative border-4 border-neutral-600 p-4 pr-35 dark:border-neutral-400">
         <div>
-          <h1 className="text-text-h mb-[5px] text-[30px] tracking-[0.5px]">
+          <h1 className="text-text-h font-rubik text-3xl font-bold tracking-tight">
             Kinsey Bellerose
           </h1>
-          <p className="text-text text-base font-medium">
+          <p className="text-text text-lg font-medium">
             Software Developer and Computer Science Student at Northeastern
             University
           </p>

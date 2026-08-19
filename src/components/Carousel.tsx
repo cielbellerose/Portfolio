@@ -34,9 +34,11 @@ function Carousel({ slides }: CarouselProps) {
               <img
                 src={slide.imageUrl}
                 alt={slide.caption}
-                className="h-90 w-full rounded-[5px] object-cover"
+                className="rounded-image h-90 w-full object-cover"
               />
-              <p className="text-text mt-3 text-center">{slide.caption}</p>
+              <p className="text-text mt-3 text-center text-sm">
+                {slide.caption}
+              </p>
             </div>
           ))}
         </div>

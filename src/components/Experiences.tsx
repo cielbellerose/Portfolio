@@ -3,7 +3,9 @@ import Card from "./Card";
 function Experiences() {
   return (
     <>
-      <div className="py-2 text-2xl font-bold">Experiences</div>
+      <div className="font-rubik py-2 text-2xl font-bold tracking-tight">
+        Experiences
+      </div>
       <div className="grid grid-cols-2 gap-5 py-2.5">
         <Card
           title="Northeastern Electric Racing"
