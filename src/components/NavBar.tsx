@@ -9,7 +9,7 @@ const tabs = [
 
 function NavBar() {
   return (
-    <nav className="flex w-full gap-5 py-4 pr-50">
+    <nav className="flex w-full gap-5 py-4 lg:pr-50">
       {tabs.map((tab) => (
         <Link
           key={tab.to}

@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({
   imageUrl,
   imageAlt = "",
   color = "purple",
-  heightClass = "h-50 min-h-50",
+  heightClass = "min-h-50",
 }) => {
   const { border, icon } = colorClasses[color];
 

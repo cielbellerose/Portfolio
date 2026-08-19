@@ -6,7 +6,7 @@ function Resume() {
       <a
         href={resumePdf}
         download="Kinsey_Bellerose_Resume.pdf"
-        className="bg-blue font-rubik rounded-chip h-10 w-[calc(25%-15px)] cursor-pointer border-none px-3.5 py-1.5 text-left text-base font-semibold text-white no-underline transition-opacity duration-200"
+        className="bg-blue font-rubik rounded-chip h-10 w-full cursor-pointer border-none px-3.5 py-1.5 text-left text-base font-semibold text-white no-underline transition-opacity duration-200 sm:w-[calc(25%-15px)]"
       >
         Download
       </a>

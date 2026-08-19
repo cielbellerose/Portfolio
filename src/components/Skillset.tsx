@@ -5,7 +5,7 @@ export interface SkillsetProps {
 
 const Skillset: React.FC<SkillsetProps> = ({ title, skills }) => {
   return (
-    <div className="rounded-card my-6 border-4 border-neutral-600 p-2.5 dark:border-neutral-400">
+    <div className="rounded-card w-full border-4 border-neutral-600 p-2.5 dark:border-neutral-400">
       <div className="font-rubik text-base font-semibold">{title}</div>
       <div className="my-2 grid grid-cols-2 gap-2">
         {skills.map((skill) => (

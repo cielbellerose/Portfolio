@@ -7,14 +7,14 @@ function Projects() {
       <div className="font-rubik py-2 text-2xl font-bold tracking-tight">
         Projects
       </div>
-      <div className="grid grid-cols-2 gap-5 py-2.5">
+      <div className="grid grid-cols-1 gap-5 py-2.5 sm:grid-cols-2">
         <Card
           title="VSCode Extension TC Detection"
           dates="May 2026 - Present"
           githubUrl="https://github.com/cielbellerose/TechnicalCredit"
           color="blue"
           desc="VSCode extension that analyses Java code for Technical Credit, the positive counterpart to technical debt."
-          heightClass="h-45 min-h-45"
+          heightClass="min-h-45"
         />
         <Card
           title="NER Rules Dashboard"
@@ -22,7 +22,7 @@ function Projects() {
           githubUrl="https://github.com/Northeastern-Electric-Racing/FinishLine"
           color="blue"
           desc="Feature of a full-stack web application for Northeastern Electric Racing to parse, manage, and track rules compliance."
-          heightClass="h-45 min-h-45"
+          heightClass="min-h-45"
         />
         <Card
           title="Network Port Scanner"
@@ -31,7 +31,7 @@ function Projects() {
           color="blue"
           imageUrl={portScanner}
           imageAlt="Network Port Scanner"
-          heightClass="h-72 min-h-72"
+          heightClass="min-h-72"
         />
         <Card
           title="3D FPS Unity Game"
@@ -40,7 +40,7 @@ function Projects() {
           color="blue"
           imageUrl={petalorn}
           imageAlt="Survival of Petalorn"
-          heightClass="h-72 min-h-72"
+          heightClass="min-h-72"
         />
       </div>
     </>

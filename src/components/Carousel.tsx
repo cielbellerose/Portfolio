@@ -19,7 +19,7 @@ function Carousel({ slides }: CarouselProps) {
         type="button"
         aria-label="Previous slide"
         onClick={() => emblaApi?.scrollPrev()}
-        className="text-purple absolute top-1/2 -left-12 z-10 -translate-y-1/2 p-3 transition-opacity hover:opacity-80"
+        className="bg-bg/70 text-purple absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full p-3 transition-opacity hover:opacity-80 lg:-left-12 lg:bg-transparent"
       >
         <TriangleLeftIcon className="h-10 w-10" />
       </button>
@@ -28,13 +28,13 @@ function Carousel({ slides }: CarouselProps) {
         <div className="-ml-4 flex">
           {slides.map((slide) => (
             <div
-              className="min-w-0 shrink-0 basis-1/3 pl-4"
+              className="min-w-0 shrink-0 basis-full pl-4 sm:basis-1/2 lg:basis-1/3"
               key={slide.imageUrl}
             >
               <img
                 src={slide.imageUrl}
                 alt={slide.caption}
-                className="rounded-image h-90 w-full object-cover"
+                className="rounded-image aspect-[4/3] w-full object-cover"
               />
               <p className="text-text mt-3 text-center text-sm">
                 {slide.caption}
@@ -48,7 +48,7 @@ function Carousel({ slides }: CarouselProps) {
         type="button"
         aria-label="Next slide"
         onClick={() => emblaApi?.scrollNext()}
-        className="text-purple absolute top-1/2 -right-12 z-10 -translate-y-1/2 p-3 transition-opacity hover:opacity-70"
+        className="bg-bg/70 text-purple absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full p-3 transition-opacity hover:opacity-70 lg:-right-12 lg:bg-transparent"
       >
         <TriangleRightIcon className="h-10 w-10" />
       </button>

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="mx-auto box-border flex min-h-30 w-full max-w-[1000px] min-w-[540px] flex-1 flex-col px-6">
+    <div className="mx-auto box-border flex min-h-30 w-full max-w-[1000px] flex-1 flex-col px-4 sm:px-6">
       <NavBar />
       <main className="flex flex-1 flex-col">
         <Header />
